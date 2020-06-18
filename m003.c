@@ -22,11 +22,30 @@
 /* Verify if the positive integer 'a' is prime. */
 
 int is_prime (int a)
+
 {
-  return 0;
+int x;
+int y;
+
+x=0;
+
+for(x=1; x<a; x=x+1) 
+{
+ if (a%x==0) 
+ {
+ y=y+1;
+ }
 }
+   if (y==1)
+  return 1;
+  
+  else
+ 
+  return 0;
+} 
 
 #define USAGE "m003 <num>\n"
+
 
 /* Do not edit this function. */
 
