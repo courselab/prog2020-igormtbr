@@ -35,11 +35,11 @@ if (c > a) {
       maior = b;
     }
     else {
-    if (c > b) {
-      maior = c;
+    if (a > b) {
+      maior = a;
     }
   }
-  return a;
+  return maior;
 }
 
 /* Do not edit this function. */
