@@ -23,7 +23,22 @@
 /* Return the greatest among a, b and c. */
 
 int greatest (int a, int b, int c)
+
+
 {
+  int maior;
+
+if (c > a) {
+    maior = c;
+  }
+    if (b > a) {
+      maior = b;
+    }
+    else {
+    if (c > b) {
+      maior = c;
+    }
+  }
   return a;
 }
 
