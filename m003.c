@@ -27,16 +27,15 @@ int is_prime (int a)
 int x;
 int y;
 
-x=0;
-
-for(x=1; x<a; x=x+1) 
+for(x=2; x<a; x=x+1) 
 {
- if (a%x==0) 
- {
- y=y+1;
- }
+  if ((a%x)==0) 
+  {
+    y=1; 
+    printf ("was\n");
+  }
 }
-   if (y==1)
+   if (y>1)
   return 1;
   
   else
