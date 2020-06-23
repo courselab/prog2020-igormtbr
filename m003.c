@@ -35,7 +35,7 @@ for(x=2; x<a; x=x+1)
     printf ("was\n");
   }
 }
-   if (y>1)
+   if ( y>1 )
   return 1;
   
   else
