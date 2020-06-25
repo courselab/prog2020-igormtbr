@@ -26,6 +26,7 @@
 /* Return the determinant of a 3x3 integer matrix.*/
 
 int determinant (int m[3][3])
+
 {
  
   int result = 0, n1 = 0, n2 = 0;
