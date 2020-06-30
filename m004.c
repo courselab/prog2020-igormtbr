@@ -29,28 +29,19 @@
 
 int decimal (char *b)
 {
- 
-  int x;
-  int y;
-  int base = 0;
-  int count = 1;
   
-  y = strlen (b);
+  int dec = 0;
+  int val = 1;
   
-  for (x = y-1; x >= 0 ; x--)
-  {
-    
-     if (b[x]=='1')
-     
-     {
-       
-        count = count + base;
-     
-     }
-     
-     base = base * 2;
-  }
-  return count;
+  for(int i = strlen(b)-1; i>=0 ;i--){
+   
+    if(b[i]=='1')
+    {
+      dec = dec + val;
+    }
+    val = 2*val;
+  } 
+  return dec;
 }
 
 #define USAGE "m004 <string>\n"
