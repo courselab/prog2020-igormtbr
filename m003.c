@@ -21,27 +21,35 @@
 
 /* Verify if the positive integer 'a' is prime. */
 
-int is_prime (int a)
-
+int is_prime (int y)
 {
-int x;
-int y;
-
-for(x=2; x<a; x=x+1) 
-{
-  if ((a%x)==0) 
-  {
-    y=1; 
-    printf ("was\n");
-  }
-}
-   if ( y>1 )
-  return 1;
   
-  else
- 
-  return 0;
-} 
+  int i, r = 0;
+  for (i = 1; i < y; i++) 
+  
+  {
+    if ((y % i) == 0) 
+   
+    {
+     
+      r++;
+   
+    } 
+  }
+  
+  if (r == 1) 
+  {
+    y = 1;
+  }
+  else 
+  {
+   
+    y = 0;
+  
+  }
+
+  return y;
+}
 
 #define USAGE "m003 <num>\n"
 
