@@ -28,8 +28,28 @@
 
 int lettercount (char *s)
 {
-  return 0;
-}
+  
+  int i = 0, count = 0;
+  for (i = 0; s[i]; i++)
+  
+  {
+    if (s[i] >= 97 && s[i] <= 122)
+   
+    {
+      count++;
+    }
+   
+    if (s[i] >= 65 && s[i] <= 90)
+   
+    {
+      count++;
+   
+    } 
+  
+  }
+  
+  return count;}
+
 
 
 
