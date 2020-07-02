@@ -29,10 +29,91 @@ enum {sun, mon, tue, wed, thu, fri, sat};
    Sunday=0, Monday=1... Saturday=6.*/
 
 int day_of_week (int day, int month)
-{
-  return sun;
-}
 
+{
+  
+  int y;
+  int i;
+  if (month == 1)
+  
+  {
+    i = day % 7;
+    y = i + 2;}
+  
+  else
+  if (month == 2)
+  {
+    i = 31 + day;
+    y = 2 + i % 7;}
+  
+  else 
+  if (month == 3)
+  {
+    i= 60 + day;
+    y = 2 + i % 7;}
+  
+  else 
+  if (month == 4)
+  {
+    i = 91 + day;
+    y = 2 + i % 7;}
+  
+  else 
+  if (month == 5)
+  {
+    i = 121 + day;
+    y = 2 + i % 7;}
+  
+  else 
+  if (month == 6)
+  {
+    i = 152 + day;
+    y = 2 + i % 7;}
+  
+  else 
+  if (month == 7)
+  {
+    i = 182 + day;
+    y = 2 + i % 7;}
+  
+  else 
+  if (month == 8)
+  {
+    i = 213 + day;
+    y = 2 + i % 7;}
+  
+  else 
+  if (month == 9)
+  {
+    i = 244 + day;
+    y = 2 + i % 7;}
+  
+  else 
+  if (month == 10)
+  {
+    i = 274 + day;
+    y = 2 + i % 7;}
+  
+  else 
+  if (month == 11)
+  {
+    i = 305 + day;
+    y = 2 + i % 7;}
+  
+  else 
+  if (month == 12)
+  {
+    i = 335 + day;
+    y = 2 + i % 7;}
+  if (y==7)
+  {
+    y=0;}
+  
+  if (y==8)
+  {
+    y =1;}
+  return y;
+}
 /* Do not edit function main. */
 
 int main (int argc, char **argv)
