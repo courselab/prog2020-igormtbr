@@ -21,12 +21,38 @@
 
 /* Verify if the positive integer 'a' is prime. */
 
-int is_prime (int a)
+int is_prime (int y)
 {
-  return 0;
+  
+  int i, r = 0;
+  for (i = 1; i < y; i++) 
+  
+  {
+    if ((y % i) == 0) 
+   
+    {
+     
+      r++;
+   
+    } 
+  }
+  
+  if (r == 1) 
+  {
+    y = 1;
+  }
+  else 
+  {
+   
+    y = 0;
+  
+  }
+
+  return y;
 }
 
 #define USAGE "m003 <num>\n"
+
 
 /* Do not edit this function. */
 
